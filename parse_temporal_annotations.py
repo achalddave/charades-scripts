@@ -72,7 +72,7 @@ def main(input_annotations_path, charades_classes_path, video_frames_info_path,
                     'start_frame': start_frame,
                     'end_frame': end_frame,
                     'frames_per_second': frames_per_second,
-                    'category': '%s-%s' % (class_id, class_mapping[class_id])
+                    'category': '%s' % class_mapping[class_id]
                 })
 
     with open(output, 'wb') as f:
